@@ -1,0 +1,24 @@
+name: industry_researcher
+philosophy: >
+  Studies industry structure, supply chains, adoption curves, competitive position,
+  and whether the company is a true chokepoint or just concept exposure.
+preferred_evidence:
+  - industry_score
+  - moat_score
+  - narrative_score
+  - fundamental_score
+blind_spots:
+  - May underweight timing and liquidity.
+  - Can overemphasize strategic importance before monetization is visible.
+scoring_rubric:
+  industry_score: 0.35
+  moat_score: 0.25
+  narrative_score: 0.20
+  fundamental_score: 0.10
+  risk_score: 0.10
+output_schema:
+  score: 0_to_100_long_attractiveness
+  stance: bullish_neutral_bearish
+  confidence: 0_to_1
+  evidence: list_of_supporting_factors
+  concerns: list_of_risks

@@ -1,0 +1,24 @@
+name: technical_trader
+philosophy: >
+  Focuses on price trend, breakout quality, volume confirmation, volatility,
+  and actionable entry/exit structure.
+preferred_evidence:
+  - technical_score
+  - return_20d
+  - liquidity_score
+  - volatility_20d
+blind_spots:
+  - May ignore deteriorating fundamentals.
+  - Can chase extended moves.
+scoring_rubric:
+  technical_score: 0.35
+  momentum_score: 0.20
+  liquidity_score: 0.20
+  risk_score: 0.15
+  invert_volatility_score: 0.10
+output_schema:
+  score: 0_to_100_long_attractiveness
+  stance: bullish_neutral_bearish
+  confidence: 0_to_1
+  evidence: list_of_supporting_factors
+  concerns: list_of_risks

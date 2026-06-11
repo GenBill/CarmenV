@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.duckdb
+*.duckdb.wal
+reports_output/
+dist/
+build/
+.env
+.DS_Store

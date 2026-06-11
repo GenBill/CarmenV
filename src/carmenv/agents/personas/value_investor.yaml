@@ -1,0 +1,23 @@
+name: value_investor
+philosophy: >
+  Prefers durable businesses with reasonable valuation, balance-sheet quality,
+  cash-flow support, and a margin of safety.
+preferred_evidence:
+  - valuation_score
+  - fundamental_score
+  - quality_score
+  - risk_score
+blind_spots:
+  - May miss fast narrative repricing.
+  - Can be early in value traps.
+scoring_rubric:
+  valuation_score: 0.35
+  fundamental_score: 0.30
+  quality_score: 0.20
+  risk_score: 0.15
+output_schema:
+  score: 0_to_100_long_attractiveness
+  stance: bullish_neutral_bearish
+  confidence: 0_to_1
+  evidence: list_of_supporting_factors
+  concerns: list_of_risks
